@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Bazaar</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Movie Bazaar</h1>
+    </header>
+    <main>
+        <section id="movieSelection" class="section">
+            <h2 class="section__title">Select a Movie</h2>
+            <div class="movie-list">
+                <!-- Movie cards dynamically generated with JavaScript -->
+            </div>
+        </section>
+        <br>
+        <section id="seatSelection" class="section">
+            <h2 class="section__title">Select Seats</h2 >
+            <div class="seat-map">
+                <!-- Interactive seat map with JavaScript-generated seats -->
+            </div>
+            <p>Total Price (incl. GST): <span id="totalPrice">₹0</span></p>
+            <button id="confirmSeats">Confirm Seats</button>
+        </section>
+        
+        <section id="bookingSummary" class="section">
+            <h2 class="section__title">Booking Summary</h2>
+            <p>Movie: <span id="bookingMovie"></span></p>
+            <p>Seats: <span id="bookingSeats"></span></p>
+            <p class="total-price">Total Price: <span id="bookingTotalPrice"></span></p>
+            <button id="confirmBooking" class="btn btn--confirm">Confirm Booking</button>
+        </section>
+        <section id="payment" class="section">
+            <h2 class="section__title" style="text-align: center;">Payment</h2>
+            <form id="paymentForm">
+                <!-- Payment form fields -->
+                <button id="payButton" class="btn btn--pay">Pay Now</button>
+            </form>
+        </section>
+        
+    </main>
+    
+    <footer class="footer">
+        <p>&copy; 2023 Movie Ticket Booking System</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

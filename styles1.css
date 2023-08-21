@@ -1,0 +1,165 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Header and Footer */
+.header, .footer {
+    background-color: #1777f5;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 0 10PX 20PX black;
+}
+.header__title {
+    font-size: 50px; /* Adjust the font size as needed */
+  }
+  
+  .yellow-letter {
+    color: yellow;
+  }
+  
+  .redorange-letter {
+    color: redorange; /* Note: 'redorange' is not a standard color name, so you'll need to define the color value yourself */
+  }
+  
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Section Titles */
+.section__title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #010314;
+}
+
+/* Movie Cards */
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.movie-card {
+    border: 2px solid #ffffff; /* Added border */
+    background: linear-gradient(to bottom, #f7f7f7, #fff);
+    box-shadow: 0 9px 20px rgba(16, 11, 11, 0.975);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    padding: 2rem;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(30, 0, 0, 0.941);
+    border-color: #0303f6; /* Change border color on hover */
+    border-radius: 100px;
+    
+}
+
+.movie-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+/* Seat Selection */
+.seat-map {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+    gap: 5px;
+}
+
+.seat {
+    width: 40px;
+    height: 40px;
+    background-color: #e5e5e5;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.seat.booked {
+    background-color: #ed02dd;
+    cursor: not-allowed;
+}
+
+.seat.selected {
+    background-color: #fca311;
+    color: white;
+    border: 2px solid #00a64e; /* Added border for selected seats */
+}
+
+/* Payment Form */
+#paymentForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Buttons */
+.btn {
+    background-color: #fca311;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #00a64e;
+}
+
+.btn--pay {
+    background-color: #ff5c05;
+    font-weight: bold;
+}
+
+.btn--confirm {
+    background-color: #ff5c05;
+}
+
+/* Total Price */
+.total-price {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2a04fe;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Graphics */
+.graphic {
+    display: block;
+    margin: 2rem auto;
+    max-width: 100%;
+}
